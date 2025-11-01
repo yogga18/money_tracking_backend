@@ -1,0 +1,87 @@
+# Byte-compiled / cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Distribution / packaging
+build/
+dist/
+eggs/
+parts/
+sdist/
+*.egg-info/
+pip-wheel-metadata/
+.installed.cfg
+
+# Test / coverage
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+nosetests.xml
+
+# Logs and runtime files
+*.log
+logs/
+*.pid
+*.sock
+
+# Databases
+*.sqlite3
+*.db
+db.sqlite3
+
+# Secrets / config lokal
+.env.local
+.env.* 
+secrets.yml
+secrets.json
+*.pem
+*.key
+*.crt
+*.secret
+credentials.json
+
+# IDE / editor
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Static / uploads (sesuaikan jika perlu diikutkan)
+media/
+uploads/
+staticfiles/
+
+# Build artifacts
+*.egg
+*.egg-info/
+*.whl
+
+# Misc
+__pypackages__/
+.mypy_cache/
+.cache/
+htmlcov/
+coverage/
+profile/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Docker override local config
+docker-compose.override.yml

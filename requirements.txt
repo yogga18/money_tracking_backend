@@ -1,0 +1,24 @@
+# === Core Framework ===
+fastapi                 # Framework web utama
+uvicorn[standard]       # ASGI server (production-grade)
+
+# === Data & Database (Async) ===
+sqlalchemy              # Core ORM (kita akan pakai extension asyncio-nya)
+asyncpg                 # Driver ASYNC untuk Postgres (Pengganti psycopg2)
+alembic                 # Untuk migrasi skema database (WAJIB)
+redis               # Driver ASYNC untuk Redis Cache (Pengganti redis)
+
+# === API (GraphQL & REST) ===
+strawberry-graphql[fastapi] # Integrasi Strawberry (GraphQL) dengan FastAPI
+
+# === Autentikasi & Keamanan ===
+python-jose[cryptography] # Untuk membuat dan memvalidasi JWT
+passlib[bcrypt]           # Untuk hashing password (menyimpan password user)
+
+# === Validasi & Konfigurasi ===
+pydantic                # Basis dari FastAPI, untuk validasi data
+pydantic-settings       # Untuk me-load .env ke Pydantic (di core/config.py)
+
+# === Utilitas & Lain-lain ===
+slowapi                 # Untuk implementasi rate limiting
+httpx                   # HTTP client ASYNC (Pengganti 'requests' untuk memanggil API lain)
