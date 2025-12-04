@@ -6,7 +6,8 @@ uvicorn[standard]       # ASGI server (production-grade)
 sqlalchemy              # Core ORM (kita akan pakai extension asyncio-nya)
 asyncpg                 # Driver ASYNC untuk Postgres (Pengganti psycopg2)
 alembic                 # Untuk migrasi skema database (WAJIB)
-redis               # Driver ASYNC untuk Redis Cache (Pengganti redis)
+redis                   # Driver ASYNC untuk Redis Cache (Pengganti redis)
+greenlet                # Dependency wajib untuk SQLAlchemy Async
 
 # === API (GraphQL & REST) ===
 strawberry-graphql[fastapi] # Integrasi Strawberry (GraphQL) dengan FastAPI
