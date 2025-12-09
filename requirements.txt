@@ -15,6 +15,7 @@ strawberry-graphql[fastapi] # Integrasi Strawberry (GraphQL) dengan FastAPI
 # === Autentikasi & Keamanan ===
 python-jose[cryptography] # Untuk membuat dan memvalidasi JWT
 passlib[bcrypt]           # Untuk hashing password (menyimpan password user)
+google-auth                 # Untuk verifikasi Google ID Token
 
 # === Validasi & Konfigurasi ===
 pydantic                # Basis dari FastAPI, untuk validasi data

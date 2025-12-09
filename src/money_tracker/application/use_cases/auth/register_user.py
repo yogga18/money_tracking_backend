@@ -23,7 +23,8 @@ class RegisterUserUseCase:
         new_user = User(
             email=request.email,
             password_hash=hashed_password,
-            full_name=request.full_name
+            full_name=request.full_name,
+            is_active=True # Default active on register
         )
 
         # 4. Save to Repository

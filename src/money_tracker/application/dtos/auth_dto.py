@@ -1,3 +1,7 @@
+# DTO (Data Transfer Object) (Helper utility yang dipakai di banyak tempat).
+# kegunaan DTO adalah untuk mengirim data dari satu layer ke layer lain.
+# seperti menerima request dari API, dan mengirim response ke API.
+
 from pydantic import BaseModel, EmailStr, Field
 from datetime import datetime
 import uuid

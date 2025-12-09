@@ -9,6 +9,8 @@ class User:
         password_hash: str, 
         full_name: str,
         id: Optional[uuid.UUID] = None,
+        picture_url: Optional[str] = None,
+        is_active: bool = True,
         created_at: Optional[datetime] = None,
         updated_at: Optional[datetime] = None
     ):
@@ -16,6 +18,8 @@ class User:
         self.email = email
         self.password_hash = password_hash
         self.full_name = full_name
+        self.picture_url = picture_url
+        self.is_active = is_active
         self.created_at = created_at or datetime.utcnow()
         self.updated_at = updated_at or datetime.utcnow()
 

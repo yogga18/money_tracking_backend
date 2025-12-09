@@ -5,7 +5,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 
 from money_tracker.domain.models.user import User
 from money_tracker.application.ports.repositories.user_repo import UserRepository
-from money_tracker.adapters.db.models import UserModel
+from money_tracker.adapters.db.models.user import UserModel
 
 class PostgresUserRepository(UserRepository):
     def __init__(self, session: AsyncSession):
@@ -18,6 +18,8 @@ class PostgresUserRepository(UserRepository):
             email=model.email,
             password_hash=model.password_hash,
             full_name=model.full_name,
+            picture_url=model.picture_url,
+            is_active=model.is_active,
             created_at=model.created_at,
             updated_at=model.updated_at
         )
@@ -29,6 +31,8 @@ class PostgresUserRepository(UserRepository):
             email=entity.email,
             password_hash=entity.password_hash,
             full_name=entity.full_name,
+            picture_url=entity.picture_url,
+            is_active=entity.is_active,
             created_at=entity.created_at,
             updated_at=entity.updated_at
         )
